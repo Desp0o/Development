@@ -3,9 +3,14 @@
     src: url('./fonts/FiraGO-Regular.woff');
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .carousel{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     font-feature-settings: "case";
 
   }
@@ -22,18 +27,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: all 0.5s ease;
   }
   
   .current{
     opacity: 1;
+    transition: all 0.5s ease;
   }
   
   .slide img{
     width: 100%;
-    height: 100%;
+    height: 99%;
     object-fit: cover;
+    object-position: center;
   }
   
   
