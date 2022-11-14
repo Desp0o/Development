@@ -129,11 +129,12 @@ a{
 .dashboard{
     visibility: hidden;
     position: fixed;
-    height: 80%;
+    height: fit-content;
+    padding: 20px 0px;
     width: 100%;
     background-color: #103D34;
     z-index: 1;
-    top:60px;
+    top:59px;
     margin-top: 0;
     transition: all 0.5s ease;
     display: flex;
