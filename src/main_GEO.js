@@ -90,8 +90,8 @@ function MainGeo(){
                     <span>პროექტის შესახებ</span>
                     <Link><span>ბინები</span></Link>
                     <span>კონტაქტი</span>
-                    <Link>ინგლისური</Link>
-                    <Link>რუსული</Link>
+                    <Link style={{color:'#C2A561'}}>ინგლისური</Link>
+                    <Link style={{color:'#C2A561'}}>რუსული</Link>
                 </div>
             </div>
         </div>
