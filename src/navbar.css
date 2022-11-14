@@ -109,7 +109,7 @@ a{
 
 .burger_logo{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
 }
 @media (max-width:1000px) {
     .Nav{
