@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Desp0o/Development.git/static/css/main.2e200f33.css",
-    "main.js": "/Desp0o/Development.git/static/js/main.1afc979a.js",
-    "static/js/787.d42cef9d.chunk.js": "/Desp0o/Development.git/static/js/787.d42cef9d.chunk.js",
-    "static/media/img2.jpg": "/Desp0o/Development.git/static/media/img2.316736d41cfde5dfa824.jpg",
-    "static/media/img3.jpg": "/Desp0o/Development.git/static/media/img3.9ec6c0e3e9166f848db6.jpg",
-    "static/media/img1.jpg": "/Desp0o/Development.git/static/media/img1.8ff7acf1bbaf10a309c9.jpg",
-    "static/media/FiraGO-Regular.woff": "/Desp0o/Development.git/static/media/FiraGO-Regular.d4fb4c8a0328371ec572.woff",
-    "static/media/logo.png": "/Desp0o/Development.git/static/media/logo.ad40effb853bfdfb75e6.png",
-    "index.html": "/Desp0o/Development.git/index.html",
-    "main.2e200f33.css.map": "/Desp0o/Development.git/static/css/main.2e200f33.css.map",
-    "main.1afc979a.js.map": "/Desp0o/Development.git/static/js/main.1afc979a.js.map",
-    "787.d42cef9d.chunk.js.map": "/Desp0o/Development.git/static/js/787.d42cef9d.chunk.js.map"
+    "main.css": "/Development.git/static/css/main.ee19b6b6.css",
+    "main.js": "/Development.git/static/js/main.dbdb3374.js",
+    "static/js/787.d42cef9d.chunk.js": "/Development.git/static/js/787.d42cef9d.chunk.js",
+    "static/media/img2.jpg": "/Development.git/static/media/img2.316736d41cfde5dfa824.jpg",
+    "static/media/img3.jpg": "/Development.git/static/media/img3.9ec6c0e3e9166f848db6.jpg",
+    "static/media/img1.jpg": "/Development.git/static/media/img1.8ff7acf1bbaf10a309c9.jpg",
+    "static/media/FiraGO-Regular.woff": "/Development.git/static/media/FiraGO-Regular.d4fb4c8a0328371ec572.woff",
+    "static/media/logo.png": "/Development.git/static/media/logo.ad40effb853bfdfb75e6.png",
+    "index.html": "/Development.git/index.html",
+    "main.ee19b6b6.css.map": "/Development.git/static/css/main.ee19b6b6.css.map",
+    "main.dbdb3374.js.map": "/Development.git/static/js/main.dbdb3374.js.map",
+    "787.d42cef9d.chunk.js.map": "/Development.git/static/js/787.d42cef9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e200f33.css",
-    "static/js/main.1afc979a.js"
+    "static/css/main.ee19b6b6.css",
+    "static/js/main.dbdb3374.js"
   ]
 }
