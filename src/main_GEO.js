@@ -5,6 +5,7 @@ import {Link, link} from "react-router-dom";
 import logo from './images/logo.png'
 import {AiOutlineMenu}  from "react-icons/ai"
 import {AiOutlineClose} from "react-icons/ai"
+import {FcHome} from "react-icons/fc"
 
 import Slider from './Slider'
 
@@ -13,13 +14,19 @@ import './homeGeo.css'
 import './font.css'
 import './navbar.css'
 import './font.css'
+import './load.css'
 
 function MainGeo(){
+    const [load, setLoad] = useState('loading')
+    const [overlay, setOverlay] = useState('overlay_deactive')
     const [toggle, setToggle]   = useState(false)
     const [open, setOpen] = useState('burger_logo')
     const [close, setClose] = useState('hide_logo')
-    const [dashboard, setDashboard] = useState('hidden_dashboard')
+    const [dashboard, setDashboard] = useState('dashboard hidden_dashboard')
     
+    setTimeout(()=>{
+        setLoad('loading_deactivate')
+    },1500)
     
     function burgerToggle(){
         if(!toggle){
@@ -27,7 +34,9 @@ function MainGeo(){
             setClose('burger_logo-close')
             setToggle(true)
             setDashboard('dashboard')
+            setOverlay('overlay_active')
         }else{
+            setOverlay('overlay_deactive')
             setOpen('burger_logo')
             setClose('hide_logo')
             setToggle(false)
@@ -44,6 +53,10 @@ function MainGeo(){
     return(
         <div >
         
+        <div className={load}>
+            <FcHome className="loading_logo"/>
+        </div>
+
         {/* ნავიგაცია ///////////////////// */}
         <div className="Nav">
             <div className="navbar-upper">
@@ -83,7 +96,10 @@ function MainGeo(){
                 </div>
             </div>
 
-            <div className={dashboard}>
+           
+        </div>
+
+        <div className={dashboard}>
                 <div className="dashboard_inner">
                     <span>მთავარი</span>
                     <span>ჩვენ შესახებ</span>
@@ -93,9 +109,9 @@ function MainGeo(){
                     <Link style={{color:'#C2A561'}}>ინგლისური</Link>
                     <Link style={{color:'#C2A561'}}>რუსული</Link>
                 </div>
-            </div>
         </div>
 
+        <div className={overlay} onClick={burgerToggle}></div>
         
 
         {/* სლაიდერი ///////////////////  */}
@@ -106,18 +122,8 @@ function MainGeo(){
             </div>
          </div>
             
-
-            
-
-            <h1>sad</h1>
-            <h1>sad</h1>
-            <h1>sad</h1>
-            <h1>sad</h1>
-            <h1>sad</h1>
-            <h1>sad</h1>
-            <h1>sad</h1>
-            <h1>sad</h1>
-            <h1 ref={headerRef}>sad</h1>
+       
+        
         </div>
     )
 }
