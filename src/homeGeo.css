@@ -1,6 +1,7 @@
 body{
     font-family: "firagoRegular";
     font-feature-settings: "case";
+    -webkit-font-feature-settings: "case";
 }
 
 .carousel_main_page{

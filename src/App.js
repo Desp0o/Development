@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route exact path='*' element={<MainGeo />} />
+        <Route exact path="*" element={<MainGeo />} />
       </Routes>
     </div>
   );

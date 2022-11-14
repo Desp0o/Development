@@ -5,6 +5,8 @@ import './navbar.css'
 import './font.css'
 
 import logo from './images/logo.png'
+import {AiOutlineMenu} from "react-icons/ai"
+import {AiOutlineClose} from "react-icons/ai"
 
 function Navbar(){
     return(
@@ -33,7 +35,20 @@ function Navbar(){
                     <Link>რუსული</Link>
                 </div>
             </div>
+
+
+            <div className="burger_menu">
+                <div className="burger_menu_compay_logo">
+                    <img src={logo}/>
+                </div>
+
+                <div className="burger-menu_logo">
+                    <AiOutlineMenu className="burger_logo" />
+                </div>
+            </div>
         </div>
+
+        
     )
 }
 

@@ -7,6 +7,7 @@
     z-index: 2;
     font-family: "firagoRegular";
     font-feature-settings: "case";
+    -webkit-font-feature-settings: "case";
 }
 
 .navbar-upper{
@@ -77,4 +78,52 @@
 a{
     text-decoration: none;
     color: unset;
+}
+
+.burger_menu{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.burger_menu_compay_logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding-left: 20px;
+}
+
+.burger_menu_compay_logo img{
+    width: 100px;
+}
+
+.burger-menu_logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #C2A561;
+    padding-right: 20px;
+}
+
+.burger_logo{
+    cursor: pointer;
+    font-size: 20px;
+}
+@media (max-width:1000px) {
+    .Nav{
+        background-color: #103D34;
+        height: 60px;
+    }
+    .navbar-upper,
+    .navbar-bottom{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+    
 }
