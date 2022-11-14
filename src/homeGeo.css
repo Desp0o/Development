@@ -1,6 +1,25 @@
+body{
+    font-family: "firagoRegular";
+    font-feature-settings: "case";
+}
+
+.carousel_main_page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 .call_btn{
-    width: 100px;
-    height: 50px;
-    background-color: red;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    background-color: #C2A561;
     position: absolute;
+    border-radius: 20px;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-80%) translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }

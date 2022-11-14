@@ -60,28 +60,18 @@ function Slider() {
                                     <AnimatedText className='slider-txt' includeWhiteSpaces={true}
                                         type='words'
                                         interval={0.1}
-                                        duration={1.8}
+                                        duration={1.5}
                                         animation={{
-                                        y: '200px',
+                                        y: '100px',
                                         ease: 'ease',
                                         }}
                                         >
                                         {slide.text}
-                                        
                                     </AnimatedText>
-
-                                    
-                                    
-                                
                             </div>
-                            
                             </>
-                            
                         )}
-
-                    
                     </div>
-                    
                     </>
                 )
             })}

@@ -1,8 +1,8 @@
 {
-  "homepage": "https://desp0o.github.io/Development.git",
+  "homepage":  "https://desp0o.github.io/Development/",
   "name": "development",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "@testing-library/jest-dom": "^5.16.5",
