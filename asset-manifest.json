@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Development/static/css/main.b16c1858.css",
-    "main.js": "/Development/static/js/main.abfe26b2.js",
+    "main.css": "/Development/static/css/main.7f3af5f9.css",
+    "main.js": "/Development/static/js/main.843103e6.js",
     "static/js/787.0e191c6b.chunk.js": "/Development/static/js/787.0e191c6b.chunk.js",
     "static/media/img2.jpg": "/Development/static/media/img2.316736d41cfde5dfa824.jpg",
     "static/media/img3.jpg": "/Development/static/media/img3.9ec6c0e3e9166f848db6.jpg",
@@ -9,12 +9,12 @@
     "static/media/FiraGO-Regular.woff": "/Development/static/media/FiraGO-Regular.d4fb4c8a0328371ec572.woff",
     "static/media/logo.png": "/Development/static/media/logo.ad40effb853bfdfb75e6.png",
     "index.html": "/Development/index.html",
-    "main.b16c1858.css.map": "/Development/static/css/main.b16c1858.css.map",
-    "main.abfe26b2.js.map": "/Development/static/js/main.abfe26b2.js.map",
+    "main.7f3af5f9.css.map": "/Development/static/css/main.7f3af5f9.css.map",
+    "main.843103e6.js.map": "/Development/static/js/main.843103e6.js.map",
     "787.0e191c6b.chunk.js.map": "/Development/static/js/787.0e191c6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b16c1858.css",
-    "static/js/main.abfe26b2.js"
+    "static/css/main.7f3af5f9.css",
+    "static/js/main.843103e6.js"
   ]
 }
