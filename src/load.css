@@ -36,13 +36,19 @@
 @keyframes load{
     0%{
         transform: rotate3d(0, 0, 0, 0deg);
+        -moz-transform: rotate3d(0, 0, 0, 0deg);
+        -webkit-transform:rotate3d(0, 0, 0, 0deg);
     }
     50%{
         transform: rotate3d(0, 1, 0, 180deg);
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+        -webkit-transform:rotate3d(0, 1, 0, 180deg);
         opacity: 1;
     }
     100%{
         transform: rotate3d(0, 0, 1, 180deg);
+        -webkit-transform:rotate3d(0, 0, 1, 180deg);
+        -moz-transform: rotate3d(0, 0, 1, 180deg);
         opacity: 0;
        
     }
