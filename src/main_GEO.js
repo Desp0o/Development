@@ -5,7 +5,7 @@ import {Link, link} from "react-router-dom";
 import logo from './images/logo.png'
 import {AiOutlineMenu}  from "react-icons/ai"
 import {AiOutlineClose} from "react-icons/ai"
-import {FcHome} from "react-icons/fc"
+import homeICO from './images/home.ico'
 
 import Slider from './Slider'
 
@@ -54,7 +54,7 @@ function MainGeo(){
         <div >
         
         <div className={load}>
-            <FcHome className="loading_logo"/>
+            <img src={homeICO} className="loading_logo"/>
         </div>
 
         {/* ნავიგაცია ///////////////////// */}
