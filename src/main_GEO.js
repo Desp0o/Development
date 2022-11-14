@@ -26,7 +26,7 @@ function MainGeo(){
     
     setTimeout(()=>{
         setLoad('loading_deactivate')
-    },1500)
+    },2000)
     
     function burgerToggle(){
         if(!toggle){
