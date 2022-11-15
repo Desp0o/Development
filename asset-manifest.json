@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/Development/static/css/main.d4fdf2eb.css",
-    "main.js": "/Development/static/js/main.1d93dc96.js",
+    "main.css": "/Development/static/css/main.dac1d065.css",
+    "main.js": "/Development/static/js/main.9aac4b75.js",
     "static/js/787.d42cef9d.chunk.js": "/Development/static/js/787.d42cef9d.chunk.js",
     "static/media/img2.jpg": "/Development/static/media/img2.316736d41cfde5dfa824.jpg",
     "static/media/img3.jpg": "/Development/static/media/img3.9ec6c0e3e9166f848db6.jpg",
     "static/media/img1.jpg": "/Development/static/media/img1.8ff7acf1bbaf10a309c9.jpg",
     "static/media/FiraGO-Regular.woff": "/Development/static/media/FiraGO-Regular.d4fb4c8a0328371ec572.woff",
     "static/media/logo.png": "/Development/static/media/logo.ad40effb853bfdfb75e6.png",
-    "static/media/domusi.svg": "/Development/static/media/domusi.e02b3bd4b2978c1a04cbc14613fd5eb4.svg",
     "index.html": "/Development/index.html",
-    "main.d4fdf2eb.css.map": "/Development/static/css/main.d4fdf2eb.css.map",
-    "main.1d93dc96.js.map": "/Development/static/js/main.1d93dc96.js.map",
+    "main.dac1d065.css.map": "/Development/static/css/main.dac1d065.css.map",
+    "main.9aac4b75.js.map": "/Development/static/js/main.9aac4b75.js.map",
     "787.d42cef9d.chunk.js.map": "/Development/static/js/787.d42cef9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4fdf2eb.css",
-    "static/js/main.1d93dc96.js"
+    "static/css/main.dac1d065.css",
+    "static/js/main.9aac4b75.js"
   ]
 }
