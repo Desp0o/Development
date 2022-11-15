@@ -1,13 +1,14 @@
 
 import {React, useEffect, useState,useRef} from "react";
-import {Link, link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import { motion } from "framer-motion"
+import Fade from 'react-reveal/Fade';
+import CountUp  from 'react-countup';
 
 
 import logo from './images/logo.png'
 import {AiOutlineMenu}  from "react-icons/ai"
 import {AiOutlineClose} from "react-icons/ai"
-import homeICO from './images/domusi.svg'
 
 import Slider from './Slider'
 
@@ -17,6 +18,7 @@ import './font.css'
 import './navbar.css'
 import './font.css'
 import './load.css'
+import './counting.css'
 
 const pathVariants = {
     hidden: {
@@ -41,6 +43,8 @@ function MainGeo(){
     const [open, setOpen] = useState('burger_logo')
     const [close, setClose] = useState('hide_logo')
     const [dashboard, setDashboard] = useState('dashboard hidden_dashboard')
+    const [counter, setCounter] = useState(false)
+    
     
     setTimeout(()=>{
         setLoad('loading_deactivate')
@@ -163,8 +167,47 @@ function MainGeo(){
             <div className="call_btn" onClick={()=>handleClick(headerRef)}>
                     <p style={{color:'white'}}>მოითხოვე ზარი</p>
             </div>
-         </div>
+        </div>
             
+
+        {/* ციფრების მთვლელი     */}
+        
+        <div className="countingNumbers">
+            
+            <div className="countingNumbers_inner">
+                <div  className="block">
+                    <Fade bottom >
+                        <p className="count_number">
+                            <CountUp start={0} end={100} duration={2} delay={0}/>  +  </p>
+                        <p className="count_txt">გამწვანება</p>
+                    </Fade>
+                </div>
+                
+                <div className="block">
+                    <Fade bottom delay={300}>
+                        <p className="count_number">45</p>
+                        <p className="count_txt">პარკინგი</p>
+                    </Fade>
+                </div>
+
+                <div className="block">
+                    <Fade bottom delay={500}>
+                        <p className="count_number">45</p>
+                        <p className="count_txt">ღია აუზი</p>
+                    </Fade>
+                </div>
+
+                <div className="block">
+                    <Fade bottom delay={700}>
+                        <p className="count_number">45</p>
+                        <p className="count_txt">გასართობი სივრცე</p>
+                    </Fade>
+                </div>
+            </div>
+           
+        </div>
+        
+
        
         
         </div>
