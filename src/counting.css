@@ -1,6 +1,5 @@
 .countingNumbers{
     width: 100%;
-    height: fit-content;
 }
 
 .countingNumbers_inner{
@@ -30,4 +29,11 @@
 .count_txt{
     font-size: 14px;
     color: white;
+}
+
+@media (max-width:769px) {
+    .countingNumbers_inner{
+       flex-direction: column; 
+       gap: 50px;
+    }
 }

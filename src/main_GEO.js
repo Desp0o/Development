@@ -1,9 +1,12 @@
 
 import {React, useEffect, useState,useRef} from "react";
-import {Link} from "react-router-dom";
+import {Link, link} from "react-router-dom";
 import { motion } from "framer-motion"
 import Fade from 'react-reveal/Fade';
-import CountUp  from 'react-countup';
+import CountUp, { useCountUp } from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
+// ..
+
 
 
 import logo from './images/logo.png'
@@ -29,7 +32,7 @@ const pathVariants = {
         opacity: 1,
         pathLength: 1,
         transition: {
-            duration: 1,
+            duration: 1.5,
             ease: "easeIn" }
     }
     
@@ -44,8 +47,10 @@ function MainGeo(){
     const [close, setClose] = useState('hide_logo')
     const [dashboard, setDashboard] = useState('dashboard hidden_dashboard')
     const [counter, setCounter] = useState(false)
+  
+   
     
-    
+
     setTimeout(()=>{
         setLoad('loading_deactivate')
     },2500)
@@ -74,6 +79,7 @@ function MainGeo(){
 
     return(
         <div >
+            
         
         <div className={load}>
             <motion.svg style={{height:'150px'}} version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +89,7 @@ function MainGeo(){
             Created by potrace 1.11, written by Peter Selinger 2001-2013
             </metadata>
             <g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)"
-            fill="none" stroke="red" strokeOpacity="1" strokeWidth="200" >
+            fill="none" stroke="#C2A561" strokeOpacity="1" strokeWidth="200" >
             <motion.path  variants={pathVariants}
             d="M0 3500 l0 -3501 1898 4 c1043 1 1908 6 1922 9 14 4 55 9 92 13 37 3
             80 8 95 11 148 25 223 40 308 61 55 13 107 26 115 28 48 11 263 84 370 127
@@ -171,42 +177,71 @@ function MainGeo(){
             
 
         {/* ციფრების მთვლელი     */}
-        
         <div className="countingNumbers">
-            
             <div className="countingNumbers_inner">
+                {/* //გამწვანების ბლოკი */}
                 <div  className="block">
                     <Fade bottom >
                         <p className="count_number">
-                            <CountUp start={0} end={100} duration={2} delay={0}/>  +  </p>
+                            <CountUp start={0} end={100} duration={2} suffix={" m2"}>
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp>
+                        </p>
                         <p className="count_txt">გამწვანება</p>
                     </Fade>
                 </div>
                 
+                {/* //პარკინგის ბლოკი */}
                 <div className="block">
                     <Fade bottom delay={300}>
-                        <p className="count_number">45</p>
+                        <p className="count_number">
+                            <CountUp start={0} end={220} duration={2} delay={0.06} suffix={" m2"}>
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                             </CountUp>    
+                        </p>
                         <p className="count_txt">პარკინგი</p>
                     </Fade>
                 </div>
 
                 <div className="block">
                     <Fade bottom delay={500}>
-                        <p className="count_number">45</p>
+                        <p className="count_number">
+                            <CountUp start={0} end={80} duration={2} delay={0.08} suffix={" m2"}>
+                                {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp> 
+                        </p>
                         <p className="count_txt">ღია აუზი</p>
                     </Fade>
                 </div>
 
                 <div className="block">
                     <Fade bottom delay={700}>
-                        <p className="count_number">45</p>
+                        <p className="count_number">
+                            <CountUp start={0} end={165} duration={2} delay={0.1} suffix={" m2"}>
+                                   {({ countUpRef, start }) => (
+                                    <VisibilitySensor onChange={start}>
+                                        <span ref={countUpRef} />
+                                    </VisibilitySensor>
+                                )}
+                            </CountUp> 
+                        </p>
                         <p className="count_txt">გასართობი სივრცე</p>
                     </Fade>
                 </div>
             </div>
-           
         </div>
-        
 
        
         
