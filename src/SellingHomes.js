@@ -15,8 +15,44 @@ function SellingHomes() {
        <div className="selling_homes">
              <div className="selling_homes_inner">
 
-                <Fade left>
-                    
+                <Fade left >
+                <div className="for3DFlip">  
+
+                <div className="card">
+                        <div className="theFront">
+                            <div className="card_img">
+                                <img src={maketi} />
+                            </div>
+
+                            <div className="card_bottom">
+                                <div className="card_bottom_inner">
+                                    <p className="card_header">პილარ ნუცუბიძე</p>
+                                    <div className="card-icons">
+                                        <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
+                                        <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
+                                        <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
+                                    </div>
+                                </div>
+                        
+                                <div className="line"></div>
+
+                                <div className="bottom_logo_name">
+                                    <img src={logo}/>
+                                    <p>Twin</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="theBack">
+
+                        </div>
+                </div> 
+
+                </div>
+                </Fade>
+
+                <Fade duration={1500}>
+                <div style={{width:"20%"}}>  
                 <div className="card">
                     <div className="card_img">
                         <img src={maketi} />
@@ -39,34 +75,11 @@ function SellingHomes() {
                             <p>Twin</p>
                         </div>
                     </div>
-                </div></Fade>
-
-                <Fade bottom className="responsive_hidden">
-                <div className="card responsive_hidden">
-                    <div className="card_img">
-                        <img src={maketi} />
-                    </div>
-
-                    <div className="card_bottom">
-                        <div className="card_bottom_inner">
-                            <p className="card_header">პილარ ნუცუბიძე</p>
-                            <div className="card-icons">
-                                <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
-                                <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
-                                <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
-                            </div>
-                        </div>
-                
-                        <div className="line"></div>
-
-                        <div className="bottom_logo_name">
-                            <img src={logo}/>
-                            <p>Twin</p>
-                        </div>
-                    </div>
+                    </div>  
                 </div></Fade>
 
                 <Fade right>
+                <div style={{width:"20%"}}>  
                 <div className="card">
                     <div className="card_img">
                         <img src={maketi} />
@@ -89,6 +102,7 @@ function SellingHomes() {
                             <p>Twin</p>
                         </div>
                     </div>
+                    </div>  
                 </div></Fade>
 
 

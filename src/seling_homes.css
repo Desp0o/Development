@@ -16,20 +16,57 @@
     justify-content: center;
 }
 
+/****** ანიმაცია CARD FLIP *****/
+
 .card{
+    position: relative;
     box-sizing: border-box;
-    width: 20%;
+    width: 100%;
     height: 400px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateY(0deg);
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
 }
 
-.card:hover{
-    transform: scale(1.1);
+.theFront{
+    box-sizing: border-box;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.8s ease;
 }
 
+.card:hover .theFront{
+    transform: perspective(500px) rotateY(180deg);
+}
 
+.theBack{
+    box-sizing: border-box;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(218, 18, 18);
+    transform: perspective(500px) rotateY(180deg);
+    transition: all 0.8s ease;
+}
+
+.card:hover .theBack{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+/****** ანიმაციის დასასრული CARD FLIP *****/
 
 .card_img{
     position: relative;
@@ -112,11 +149,11 @@
     .selling_homes_inner{
         flex-direction: column;
     }
-    .card{
-        width: 80%;
-    }
 
     .responsive_hidden{
         display: none;
+    }
+    .for3DFlip{
+        width: 80%;
     }
 }
