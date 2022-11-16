@@ -71,7 +71,7 @@ function SellingHomes() {
                 </div>
                 </Fade>
 
-                <Fade delay={200} >
+                <Fade duration={1500} >
                 <div style={{width:"20%"}} className="for3DAnime">  
 
                 <div className="card">
@@ -100,34 +100,15 @@ function SellingHomes() {
                         </div>
 
                         <div className="theBack">
-                        <div className="card_img">
-                                <img src={maketi} />
-                            </div>
-
-                            <div className="card_bottom">
-                                <div className="card_bottom_inner">
-                                    <p className="card_header">პილარ ნუცუბიძე</p>
-                                    <div className="card-icons">
-                                        <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
-                                        <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
-                                        <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
-                                    </div>
-                                </div>
-                        
-                                <div className="line"></div>
-
-                                <div className="bottom_logo_name">
-                                    <img src={logo}/>
-                                    <p>Twin</p>
-                                </div>
-                            </div>
+                            აივანი 5
+                            საძინებელი
                         </div>
                 </div> 
 
                 </div>
                 </Fade>
 
-                <Fade right >
+<Fade right >
                 <div style={{width:"20%"}} className="for3DAnime">  
 
                 <div className="card">
@@ -156,27 +137,7 @@ function SellingHomes() {
                         </div>
 
                         <div className="theBack">
-                        <div className="card_img">
-                                <img src={maketi} />
-                            </div>
 
-                            <div className="card_bottom">
-                                <div className="card_bottom_inner">
-                                    <p className="card_header">პილარ ნუცუბიძე</p>
-                                    <div className="card-icons">
-                                        <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
-                                        <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
-                                        <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
-                                    </div>
-                                </div>
-                        
-                                <div className="line"></div>
-
-                                <div className="bottom_logo_name">
-                                    <img src={logo}/>
-                                    <p>Twin</p>
-                                </div>
-                            </div>
                         </div>
                 </div> 
 

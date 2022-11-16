@@ -27,8 +27,7 @@
     display: flex;
     flex-direction: column;
     transform-style: preserve-3d;
-    transform: perspective(500px) rotateY(0deg);
-    transition: all 0.8s ease;
+    transform: perspective(3000px) rotateY(0deg);
     backface-visibility: hidden;
 }
 
@@ -44,11 +43,11 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    transition: all 0.8s ease;
+    transition: all 0.6s ease;
 }
 
 .card:hover .theFront{
-    transform: perspective(500px) rotateY(180deg) translateZ(-50px);
+    transform: perspective(3000px) rotateY(180deg) ;
 }
 
 .theBack{
@@ -61,12 +60,12 @@
     display: flex;
     flex-direction: column;
     background-color: #C5C1B8;
-    transform: perspective(500px) rotateY(180deg);
-    transition: all 0.8s ease;
+    transform: perspective(3000px) rotateY(180deg);
+    transition: all 0.6s ease;
 }
 
 .card:hover .theBack{
-    transform: perspective(500px) rotateY(360deg) translateZ(-50px);
+    transform: perspective(1000px) rotateY(360deg) ;
 }
 
 /****** ანიმაციის დასასრული CARD FLIP *****/
