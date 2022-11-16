@@ -16,7 +16,7 @@ function SellingHomes() {
              <div className="selling_homes_inner">
 
                 <Fade left >
-                <div className="for3DFlip">  
+                <div style={{width:"20%"}} className="for3DAnime">  
 
                 <div className="card">
                         <div className="theFront">
@@ -44,67 +44,144 @@ function SellingHomes() {
                         </div>
 
                         <div className="theBack">
+                        <div className="card_img">
+                                <img src={maketi} />
+                            </div>
 
+                            <div className="card_bottom">
+                                <div className="card_bottom_inner">
+                                    <p className="card_header">პილარ ნუცუბიძე</p>
+                                    <div className="card-icons">
+                                        <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
+                                        <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
+                                        <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
+                                    </div>
+                                </div>
+                        
+                                <div className="line"></div>
+
+                                <div className="bottom_logo_name">
+                                    <img src={logo}/>
+                                    <p>Twin</p>
+                                </div>
+                            </div>
                         </div>
                 </div> 
 
                 </div>
                 </Fade>
 
-                <Fade duration={1500}>
-                <div style={{width:"20%"}}>  
-                <div className="card">
-                    <div className="card_img">
-                        <img src={maketi} />
-                    </div>
+                <Fade delay={200} >
+                <div style={{width:"20%"}} className="for3DAnime">  
 
-                    <div className="card_bottom">
-                        <div className="card_bottom_inner">
-                            <p className="card_header">პილარ ნუცუბიძე</p>
-                            <div className="card-icons">
-                                <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
-                                <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
-                                <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
+                <div className="card">
+                        <div className="theFront">
+                            <div className="card_img">
+                                <img src={maketi} />
+                            </div>
+
+                            <div className="card_bottom">
+                                <div className="card_bottom_inner">
+                                    <p className="card_header">პილარ ნუცუბიძე</p>
+                                    <div className="card-icons">
+                                        <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
+                                        <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
+                                        <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
+                                    </div>
+                                </div>
+                        
+                                <div className="line"></div>
+
+                                <div className="bottom_logo_name">
+                                    <img src={logo}/>
+                                    <p>Twin</p>
+                                </div>
                             </div>
                         </div>
-                
-                        <div className="line"></div>
 
-                        <div className="bottom_logo_name">
-                            <img src={logo}/>
-                            <p>Twin</p>
-                        </div>
-                    </div>
-                    </div>  
-                </div></Fade>
+                        <div className="theBack">
+                        <div className="card_img">
+                                <img src={maketi} />
+                            </div>
 
-                <Fade right>
-                <div style={{width:"20%"}}>  
-                <div className="card">
-                    <div className="card_img">
-                        <img src={maketi} />
-                    </div>
+                            <div className="card_bottom">
+                                <div className="card_bottom_inner">
+                                    <p className="card_header">პილარ ნუცუბიძე</p>
+                                    <div className="card-icons">
+                                        <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
+                                        <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
+                                        <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
+                                    </div>
+                                </div>
+                        
+                                <div className="line"></div>
 
-                    <div className="card_bottom">
-                        <div className="card_bottom_inner">
-                            <p className="card_header">პილარ ნუცუბიძე</p>
-                            <div className="card-icons">
-                                <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
-                                <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
-                                <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
+                                <div className="bottom_logo_name">
+                                    <img src={logo}/>
+                                    <p>Twin</p>
+                                </div>
                             </div>
                         </div>
-                
-                        <div className="line"></div>
+                </div> 
 
-                        <div className="bottom_logo_name">
-                            <img src={logo}/>
-                            <p>Twin</p>
+                </div>
+                </Fade>
+
+                <Fade right >
+                <div style={{width:"20%"}} className="for3DAnime">  
+
+                <div className="card">
+                        <div className="theFront">
+                            <div className="card_img">
+                                <img src={maketi} />
+                            </div>
+
+                            <div className="card_bottom">
+                                <div className="card_bottom_inner">
+                                    <p className="card_header">პილარ ნუცუბიძე</p>
+                                    <div className="card-icons">
+                                        <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
+                                        <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
+                                        <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
+                                    </div>
+                                </div>
+                        
+                                <div className="line"></div>
+
+                                <div className="bottom_logo_name">
+                                    <img src={logo}/>
+                                    <p>Twin</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>  
-                </div></Fade>
 
+                        <div className="theBack">
+                        <div className="card_img">
+                                <img src={maketi} />
+                            </div>
+
+                            <div className="card_bottom">
+                                <div className="card_bottom_inner">
+                                    <p className="card_header">პილარ ნუცუბიძე</p>
+                                    <div className="card-icons">
+                                        <div className="card_icon_block"> <img src={bath}/> <p>1 </p></div>
+                                        <div className="card_icon_block"> <img src={bed}/>  <p>2 </p></div>
+                                        <div className="card_icon_block"> <img src={cube}/> <p>74 <span>m2</span></p></div>
+                                    </div>
+                                </div>
+                        
+                                <div className="line"></div>
+
+                                <div className="bottom_logo_name">
+                                    <img src={logo}/>
+                                    <p>Twin</p>
+                                </div>
+                            </div>
+                        </div>
+                </div> 
+
+                </div>
+                </Fade>
 
             </div>
        </div>
