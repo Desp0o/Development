@@ -14,6 +14,7 @@
     -webkit-font-feature-settings: "case";
     font-feature-settings: "case";
     position: relative;
+    z-index: 0;
   }
   
   .carousel-inner{
@@ -21,6 +22,7 @@
     height: 100%;
     position: relative;
   }
+
   
   .slide{
     position: absolute;
@@ -55,12 +57,9 @@
   }
   
   .slider-txt{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
+    position: absolute;
+    z-index: 4;
+    top: 200px;
     flex-wrap: wrap;
     font-family:"firagoRegular" ;
     font-weight: 800;
@@ -86,4 +85,20 @@
         font-weight: 800;
         font-size: 30px;
       }
+  }
+
+
+  .each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
   }

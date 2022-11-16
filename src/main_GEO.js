@@ -5,6 +5,8 @@ import { motion } from "framer-motion"
 import Fade from 'react-reveal/Fade';
 import CountUp, { useCountUp } from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
+import CountNUmbers from "./CountNumbers";
+import SellingHomes from "./SellingHomes";
 // ..
 
 
@@ -46,7 +48,6 @@ function MainGeo(){
     const [open, setOpen] = useState('burger_logo')
     const [close, setClose] = useState('hide_logo')
     const [dashboard, setDashboard] = useState('dashboard hidden_dashboard')
-    const [counter, setCounter] = useState(false)
   
    
     
@@ -177,73 +178,9 @@ function MainGeo(){
             
 
         {/* ციფრების მთვლელი     */}
-        <div className="countingNumbers">
-            <div className="countingNumbers_inner">
-                {/* //გამწვანების ბლოკი */}
-                <div  className="block">
-                    <Fade bottom >
-                        <p className="count_number">
-                            <CountUp start={0} end={100} duration={2} suffix={" m2"}>
-                                {({ countUpRef, start }) => (
-                                    <VisibilitySensor onChange={start}>
-                                        <span ref={countUpRef} />
-                                    </VisibilitySensor>
-                                )}
-                            </CountUp>
-                        </p>
-                        <p className="count_txt">გამწვანება</p>
-                    </Fade>
-                </div>
-                
-                {/* //პარკინგის ბლოკი */}
-                <div className="block">
-                    <Fade bottom delay={300}>
-                        <p className="count_number">
-                            <CountUp start={0} end={220} duration={2} delay={0.06} suffix={" m2"}>
-                                {({ countUpRef, start }) => (
-                                    <VisibilitySensor onChange={start}>
-                                        <span ref={countUpRef} />
-                                    </VisibilitySensor>
-                                )}
-                             </CountUp>    
-                        </p>
-                        <p className="count_txt">პარკინგი</p>
-                    </Fade>
-                </div>
+        <CountNUmbers />
 
-                <div className="block">
-                    <Fade bottom delay={500}>
-                        <p className="count_number">
-                            <CountUp start={0} end={80} duration={2} delay={0.08} suffix={" m2"}>
-                                {({ countUpRef, start }) => (
-                                    <VisibilitySensor onChange={start}>
-                                        <span ref={countUpRef} />
-                                    </VisibilitySensor>
-                                )}
-                            </CountUp> 
-                        </p>
-                        <p className="count_txt">ღია აუზი</p>
-                    </Fade>
-                </div>
-
-                <div className="block">
-                    <Fade bottom delay={700}>
-                        <p className="count_number">
-                            <CountUp start={0} end={165} duration={2} delay={0.1} suffix={" m2"}>
-                                   {({ countUpRef, start }) => (
-                                    <VisibilitySensor onChange={start}>
-                                        <span ref={countUpRef} />
-                                    </VisibilitySensor>
-                                )}
-                            </CountUp> 
-                        </p>
-                        <p className="count_txt">გასართობი სივრცე</p>
-                    </Fade>
-                </div>
-            </div>
-        </div>
-
-       
+        <SellingHomes />
         
         </div>
     )

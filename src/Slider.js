@@ -1,6 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
-import AnimatedText from 'react-animated-text-content';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
 
+
+// Import Swiper styles
+
+
+// Import Swiper styles
+import "swiper/css"
+import "swiper/css/effect-fade";
 import './slider.css'
 import './App.css'
 
@@ -11,70 +19,33 @@ import img3 from './images/img3.jpg'
 
 
 function Slider() {
-    const imgArr = [
-        {
-            image: `${img1}`,
-            text: 'თქვენი ტექსტი უნდა იყოს აქ'
-        },
-
-        {
-            image: `${img2}`,
-            text: 'თქვენი ტექსტი უნდა იყოს აქ'
-        },
-
-        {
-            image: `${img3}`,
-            text: 'თქვენი ტექსტი უნდა იყოს აქ'
-        }
-    ]
-    const [currentSlide, setCurrentSlide] = useState(0)
-    const sliderLength = imgArr.length
-
-    const nextSlide = () =>{
-        setCurrentSlide(currentSlide === sliderLength-1 ? 0 :
-            currentSlide+1)
-    }
     
-    useEffect(()=>{
-        let slideInterval = setInterval(nextSlide,5000)
-
-        return ()=>{
-            clearInterval(slideInterval)
-        }
-    },[currentSlide])
+   
     
   return (
    
     <div className='carousel App'>
+       
         <div className='carousel-inner'>
-            {imgArr.map((slide, index) =>{
-                return(
-                    <>
-                    <div className={index === currentSlide ? "slide current" : "slide"} key={index}>
-                        {index === currentSlide && (
-                            <>
-                            <img src={slide.image} />
-                            <div className='content'>
-                            
-                                    <AnimatedText className='slider-txt' includeWhiteSpaces={true}
-                                        type='words'
-                                        interval={0.1}
-                                        duration={1.5}
-                                        animation={{
-                                        y: '100px',
-                                        ease: 'ease',
-                                        }}
-                                        >
-                                        {slide.text}
-                                    </AnimatedText>
-                            </div>
-                            </>
-                        )}
-                    </div>
-                    </>
-                )
-            })}
-        </div>
+        <Swiper 
+            spaceBetween={30}
+            centeredSlides={true}
+            effect={"fade"}
+            autoplay={{
+            delay: 8000,
+            disableOnInteraction: false,
+            }}
+            
+            modules={[Autoplay,  Navigation]}
+            className="slide"
+        >
+        <SwiperSlide >
+                <img src={img1}/>  
+        </SwiperSlide>
+        <SwiperSlide><img src={img2}/></SwiperSlide>
+        <SwiperSlide><img src={img3}/></SwiperSlide>
+      </Swiper>
+      </div>
     </div>
 
     
