@@ -2,7 +2,9 @@
     width: 100%;
     height: fit-content;
     padding: 50px 0px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #103D34;
 }
 
@@ -43,7 +45,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    transition: all 0.6s ease;
+    transition: all 0.6s ease-in-out;
 }
 
 .card:hover .theFront{
@@ -61,7 +63,7 @@
     flex-direction: column;
     background-color: #C5C1B8;
     transform: perspective(3000px) rotateY(180deg);
-    transition: all 0.6s ease;
+    transition: all 0.6s ease-in-out;
 }
 
 .card:hover .theBack{
@@ -161,4 +163,14 @@
     .responsive_hidden{
         display: none;
     }
+}
+
+
+
+.selling_header{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5%;
 }

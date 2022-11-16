@@ -1,6 +1,6 @@
 
 import {React, useEffect, useState,useRef} from "react";
-import {Link, link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import { motion } from "framer-motion"
 import Fade from 'react-reveal/Fade';
 import CountUp, { useCountUp } from "react-countup";
@@ -27,14 +27,14 @@ import './counting.css'
 
 const pathVariants = {
     hidden: {
-        opacity: 0,
+        opacity: 1,
         pathLength: 0
     },
     visible: {
         opacity: 1,
         pathLength: 1,
         transition: {
-            duration: 1.5,
+            duration: 2.5,
             ease: "easeIn" }
     }
     
@@ -54,7 +54,7 @@ function MainGeo(){
 
     setTimeout(()=>{
         setLoad('loading_deactivate')
-    },2500)
+    },3000)
     
     function burgerToggle(){
         if(!toggle){
@@ -83,14 +83,19 @@ function MainGeo(){
             
         
         <div className={load}>
-            <motion.svg style={{height:'150px'}} version="1.0" xmlns="http://www.w3.org/2000/svg"
+            
+
+                    {/* წარწერებიიიიიიიი */}
+                <div className="container">
+
+                <motion.svg style={{height:'150px'}} version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="700.000000pt" height="700.000000pt" viewBox="0 0 700.000000 700.000000"
             preserveAspectRatio="xMidYMid meet" initial="hidden" animate="visible">
             <metadata>
             Created by potrace 1.11, written by Peter Selinger 2001-2013
             </metadata>
             <g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)"
-            fill="none" stroke="#C2A561" strokeOpacity="1" strokeWidth="200" >
+            fill="none" stroke="#FFFFFF" strokeOpacity="1" strokeWidth="200" >
             <motion.path  variants={pathVariants}
             d="M0 3500 l0 -3501 1898 4 c1043 1 1908 6 1922 9 14 4 55 9 92 13 37 3
             80 8 95 11 148 25 223 40 308 61 55 13 107 26 115 28 48 11 263 84 370 127
@@ -108,8 +113,23 @@ function MainGeo(){
             </g>
             </motion.svg>
 
-            
-        </div>
+
+                    <div className="box">
+
+                        <div className="title">
+                            <span className="block"></span>
+                            <h1>Twins<span></span></h1>
+                        </div>
+
+                        <div className="role">
+                            <div className="block"></div>
+                            <p>Development</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
         {/* ნავიგაცია ///////////////////// */}
         <div className="Nav">

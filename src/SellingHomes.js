@@ -1,5 +1,6 @@
 import {React, useEffect, useState,useRef} from "react";
 import Fade from 'react-reveal/Fade';
+import {Link} from "react-router-dom";
 
 import './seling_homes.css'
 
@@ -13,6 +14,12 @@ import logo from './images/logo.png'
 function SellingHomes() {
     return(
        <div className="selling_homes">
+        <div className="selling_header">
+                <p>გასაყიდი ბინები</p>
+
+                <Link>ყველა შეთავაზებას</Link>
+            </div>
+
              <div className="selling_homes_inner">
 
                 <Fade left >
@@ -108,7 +115,7 @@ function SellingHomes() {
                 </div>
                 </Fade>
 
-<Fade right >
+                <Fade right >
                 <div style={{width:"20%"}} className="for3DAnime">  
 
                 <div className="card">
