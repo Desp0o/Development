@@ -14,11 +14,12 @@ import logo from './images/logo.png'
 function SellingHomes() {
     return(
        <div className="selling_homes">
+
+        <Fade duration={1500}>
         <div className="selling_header">
                 <p className="selling_header_p">გასაყიდი ბინები</p>
-
-               
-            </div>
+        </div>
+        </Fade>
 
              <div className="selling_homes_inner">
 
