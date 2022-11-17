@@ -1,21 +1,30 @@
 .selling_homes{
     width: 100%;
     height: fit-content;
-    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #103D34;
+    background-color: #D2D4D6;
+    padding: 50px 0;
+    gap: 50px;
 }
 
 .selling_homes_inner{
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 /****** ანიმაცია CARD FLIP *****/
@@ -24,7 +33,7 @@
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    height: 400px;
+    height: 300px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -41,7 +50,7 @@
     position: absolute;
     backface-visibility: hidden;
     width: 100%;
-    height: 400px;
+    height: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -57,7 +66,7 @@
     position: absolute;
     backface-visibility: hidden;
     width: 100%;
-    height: 400px;
+    height: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -75,7 +84,7 @@
 .card_img{
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 50%;
     background-color: #c5c1b8;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
@@ -103,10 +112,10 @@
 .card_bottom_inner{
     width: 90%;
     padding-left: 5%;
-    padding-top: 10%;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap:20px;
 }
 
 
@@ -125,7 +134,6 @@
 .line{
     width: 90%;
     height: 2px;
-    margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.123);
 }
 
@@ -139,7 +147,7 @@
 }
 
 .bottom_logo_name img{
-    width: 70px;
+    width: 50px;
 }
 
 .card_icon_block{
@@ -152,12 +160,39 @@
    font-size: 12px;
 }
 
+.flat_link{
+    background-color: green;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: white !important;
+}
+
+.selling_header_p{
+    font-size: 30px;
+    position: relative;
+}
+
+.selling_header_p::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: green;
+    
+    bottom: -10px;
+}
+
 @media (max-width:769px) {
     .selling_homes_inner{
         flex-direction: column;
     }
     .for3DAnime{
-        width: 80% !important;
+        width: 70% !important;
     }
 
     .responsive_hidden{
@@ -168,9 +203,8 @@
 
 
 .selling_header{
-    width: 75%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 5%;
+    justify-content: center;
 }

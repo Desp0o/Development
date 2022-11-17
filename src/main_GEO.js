@@ -49,7 +49,6 @@ function MainGeo(){
     const [close, setClose] = useState('hide_logo')
     const [dashboard, setDashboard] = useState('dashboard hidden_dashboard')
   
-   
     
 
     setTimeout(()=>{
@@ -133,11 +132,11 @@ function MainGeo(){
 
         {/* ნავიგაცია ///////////////////// */}
         <div className="Nav">
-            <div className="navbar-upper">
+            {/* <div className="navbar-upper">
                 <p><span>მისამართი /</span>გულუას ქ. 10/12, თბილისი</p>
                 <p><span>ტელეფონი /</span>+995 596 33 33 00</p>
                 <p><span>ელ-ფოსტა /</span>sales@allianceconstruction.ge</p>
-            </div>
+            </div> */}
 
             <div className="navbar-bottom">
                 <div className="logo_div">
@@ -146,15 +145,19 @@ function MainGeo(){
 
                 <div className="navbar_menu">
                     <span>მთავარი</span>
+                    <Link><span>ბინები</span></Link>
                     <span>ჩვენ შესახებ</span>
                     <span>პროექტის შესახებ</span>
-                    <Link><span>ბინები</span></Link>
                     <span>კონტაქტი</span>
                 </div>
 
                 <div className="language">
-                    <Link>ინგლისური</Link>
-                    <Link>რუსული</Link>
+                    <Link>ENG</Link>
+                    <Link>RUS</Link>
+
+                    <div className="nav-btn">
+                        <p>555 11 00 02</p>
+                    </div>
                 </div>
             </div>
 
@@ -180,8 +183,8 @@ function MainGeo(){
                     <span>პროექტის შესახებ</span>
                     <Link><span>ბინები</span></Link>
                     <span>კონტაქტი</span>
-                    <Link style={{color:'#C2A561'}}>ინგლისური</Link>
-                    <Link style={{color:'#C2A561'}}>რუსული</Link>
+                    <Link style={{color:'#C2A561'}}>ENG</Link>
+                    <Link style={{color:'#C2A561'}}>RUS</Link>
                 </div>
         </div>
 

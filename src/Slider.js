@@ -1,14 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
+import AnimatedText from 'react-animated-text-content';
 
-
-// Import Swiper styles
-
-
-// Import Swiper styles
-import "swiper/css"
-import "swiper/css/effect-fade";
 import './slider.css'
 import './App.css'
 
@@ -19,33 +11,60 @@ import img3 from './images/img3.jpg'
 
 
 function Slider() {
+    const imgArr = [
+        {
+            image: `${img1}`,
+            text: 'თქვენი ტექსტი 1'
+        },
+
+        {
+            image: `${img2}`,
+            text: 'თქვენი ტექსტი 2'
+        },
+
+        {
+            image: `${img3}`,
+            text: 'თქვენი ტექსტი 3'
+        }
+    ]
     
-   
+    const [position, setPosition] = useState(0)
+    const [current, setCurrent] = useState('slide')
+
+    const nextSlide = () =>{
+      setPosition(position === imgArr.length-1 ? 0 :
+        position+1)
+  }
+
+    useEffect(()=>{
+      const interval =  setInterval(nextSlide,6000)
+
+      return ()=>{
+        clearInterval(interval) 
+      }
+    },[position])
     
   return (
    
     <div className='carousel App'>
-       
         <div className='carousel-inner'>
-        <Swiper 
-            spaceBetween={30}
-            centeredSlides={true}
-            effect={"fade"}
-            autoplay={{
-            delay: 8000,
-            disableOnInteraction: false,
-            }}
+            <img className={current} src={imgArr[position].image} />
+              <div className='content'>
+                  <AnimatedText includeWhiteSpaces className='slider-txt'
+                    type='words'
+                    interval={0.3}
+                    duration={1.5}
+                    animation={{
+                    y: '100px',
+                    ease: 'ease',
+                    }}
+                    >
+                    {imgArr[position].text}
+                  </AnimatedText>
+                                      
+              </div>
             
-            modules={[Autoplay,  Navigation]}
-            className="slide"
-        >
-        <SwiperSlide >
-                <img src={img1}/>  
-        </SwiperSlide>
-        <SwiperSlide><img src={img2}/></SwiperSlide>
-        <SwiperSlide><img src={img3}/></SwiperSlide>
-      </Swiper>
-      </div>
+        </div>
     </div>
 
     
@@ -54,3 +73,24 @@ function Slider() {
 }
 
 export default Slider;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
