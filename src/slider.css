@@ -30,7 +30,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-      transition: all 0.4s ease;
+    object-fit: cover;
+    transition: all 0.4s ease;
   }
   
   .current{
@@ -42,8 +43,6 @@
   .slide img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
   }
   
   
@@ -93,17 +92,3 @@
   }
 
 
-  .each-slide-effect > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 350px;
-  }
-  
-  .each-slide-effect span {
-    padding: 20px;
-    font-size: 20px;
-    background: #efefef;
-    text-align: center;
-  }

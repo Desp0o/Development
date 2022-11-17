@@ -193,7 +193,7 @@ function SellingHomes() {
                 </div>
 
 
-            <div className="row">
+            <div className="row responsive_hidden">
                 <Fade  duration={2000}>
                 <div style={{width:"20%"}} className="for3DAnime">  
 

@@ -191,6 +191,9 @@
     .selling_homes_inner{
         flex-direction: column;
     }
+    .row{
+        flex-direction: column;
+    }
     .for3DAnime{
         width: 70% !important;
     }
