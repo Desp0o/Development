@@ -8,3 +8,7 @@
     height: 100vh;
     overflow-x: hidden;
 }
+
+body{
+    background-color: #D2D4D6;
+}

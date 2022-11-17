@@ -211,3 +211,16 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width:1400px) {
+    .card{
+        height: 400px;
+        
+    }
+    .card_bottom{
+        gap:20px;
+    }
+    .card_bottom_inner{
+        gap:40px;
+    }
+}
