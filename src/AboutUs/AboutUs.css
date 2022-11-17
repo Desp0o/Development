@@ -40,6 +40,13 @@
     justify-content: center;
 }
 
+.About_us_inner_for_Not_Desktop{
+    width: 100%;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .About_us_inner_left{
     box-sizing: border-box;
     width: 60%;
@@ -125,9 +132,13 @@
 @media (max-width:769px) {
     .About_us_inner_left{
         width: 90%;
+        padding: 0;
     }
-
     .responsive_hidden{
         display: none;
     }
+    .About_us_inner_for_Not_Desktop{
+        display: flex;
+    }
+    
 }

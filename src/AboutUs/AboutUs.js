@@ -135,7 +135,7 @@ function AboutUs() {
             რესპონსივისთვის */}
             {/* ********************************************************************************* */}
             
-            <div className="About_us_inner hidden_for_desktop">
+            <div className="About_us_inner_for_Not_Desktop">
             <div className="About_us_inner_left">
 
              <Fade left>  
