@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import CountNUmbers from "./CountNumbers";
 import SellingHomes from "./SellingHomes";
 import WhyTwins from "./whyTwins/WhyTwins";
+import AboutUs from "./AboutUs/AboutUs";
 // ..
 
 
@@ -144,8 +145,8 @@ function MainGeo(){
                 <div className="navbar_menu">
                     <span>მთავარი</span>
                     <Link><span>ბინები</span></Link>
-                    <span>ჩვენ შესახებ</span>
                     <span>პროექტის შესახებ</span>
+                    <span>ჩვენ შესახებ</span>
                     <span>კონტაქტი</span>
                 </div>
 
@@ -177,9 +178,9 @@ function MainGeo(){
         <div className={dashboard}>
                 <div className="dashboard_inner">
                     <span>მთავარი</span>
-                    <span>ჩვენ შესახებ</span>
-                    <span>პროექტის შესახებ</span>
                     <Link><span>ბინები</span></Link>
+                    <span>პროექტის შესახებ</span>
+                    <span>ჩვენ შესახებ</span>
                     <span>კონტაქტი</span>
                     <Link style={{color:'#C2A561'}}>ENG</Link>
                     <Link style={{color:'#C2A561'}}>RUS</Link>
@@ -204,6 +205,8 @@ function MainGeo(){
         <SellingHomes />
 
         <WhyTwins />
+
+        <AboutUs />
         
         </div>
     )
