@@ -3,6 +3,13 @@ import Fade from 'react-reveal/Fade';
 
 import './WhyTwins.css'
 
+import '../images/tree.png'
+import '../images/bellboy.png'
+import '../images/secure.png'
+import '../images/playground.png'
+import '../images/parking.png'
+import '../images/football-field.png'
+
 
 function WhyTwins() {
     return(
