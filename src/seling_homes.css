@@ -172,6 +172,7 @@
 .selling_header_p{
     font-size: 30px;
     position: relative;
+    font-weight: 700;
 }
 
 .selling_header_p::after{
