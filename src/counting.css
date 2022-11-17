@@ -5,6 +5,8 @@
 .countingNumbers_inner{
     width: 100%;
     height: fit-content;
+    -webkit-padding-before:50px;
+    -webkit-padding-after:50px;
     padding: 50px 0px;
     display: flex;
     align-items: center;

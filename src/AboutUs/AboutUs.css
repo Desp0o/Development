@@ -6,6 +6,8 @@
 .About_us{
     width: 100%;
     height: fit-content;
+    -webkit-padding-before:50px;
+    -webkit-padding-after:50px;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
