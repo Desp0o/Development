@@ -13,8 +13,32 @@
 
 .whyTwins_inner_left{
     width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row_for_whyTwins{
+    box-sizing: border-box;
+    width: 100%;
+    height: 45%;
+    border: 1px solid salmon;
+    display: flex;
+    gap: 20px;
+    padding-left: 5%;
+}
+
+.icon_n_txt{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid black;
 }
 
 .whyTwins_inner_right{
     width: 50%;
+    height: 100%;
 }

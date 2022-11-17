@@ -19,7 +19,17 @@ function WhyTwins() {
 
                 {/*მარცხენა მხარე*/}
                 <div className="whyTwins_inner_left">
+                    <div className="row_for_whyTwins">
+                        <div className="icon_n_txt"></div>
+                        <div className="icon_n_txt"></div>
+                        <div className="icon_n_txt"></div>
+                    </div>
 
+                    <div className="row_for_whyTwins">
+                        <div className="icon_n_txt"></div>
+                        <div className="icon_n_txt"></div>
+                        <div className="icon_n_txt"></div>
+                    </div>
                 </div>
 
                 {/* მარჯვენა მხარე */}
