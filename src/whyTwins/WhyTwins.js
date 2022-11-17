@@ -1,6 +1,7 @@
 import {React, useEffect, useState,useRef} from "react";
 import Fade from 'react-reveal/Fade';
 
+import './WhyTwins.css'
 
 
 function WhyTwins() {
@@ -11,7 +12,7 @@ function WhyTwins() {
 
                 {/*მარცხენა მხარე*/}
                 <div className="whyTwins_inner_left">
-a
+
                 </div>
 
                 {/* მარჯვენა მხარე */}
