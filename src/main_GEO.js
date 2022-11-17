@@ -2,11 +2,9 @@
 import {React, useEffect, useState,useRef} from "react";
 import {Link} from "react-router-dom";
 import { motion } from "framer-motion"
-import Fade from 'react-reveal/Fade';
-import CountUp, { useCountUp } from "react-countup";
-import VisibilitySensor from 'react-visibility-sensor';
 import CountNUmbers from "./CountNumbers";
 import SellingHomes from "./SellingHomes";
+import WhyTwins from "./whyTwins/WhyTwins";
 // ..
 
 
@@ -204,6 +202,8 @@ function MainGeo(){
         <CountNUmbers />
 
         <SellingHomes />
+
+        <WhyTwins />
         
         </div>
     )
