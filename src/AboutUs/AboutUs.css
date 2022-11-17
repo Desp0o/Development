@@ -56,6 +56,7 @@
     height: 40px !important;
     display: flex;
     align-items: center;
+    font-weight: 800 !important;
 }
 
 .textfix{
@@ -67,6 +68,7 @@
     width: 30%;
     height: 400px;
     position: relative;
+    box-sizing: border-box;
 }
 
 
@@ -114,9 +116,14 @@
     transition: all 0.6s ease;
 }
 
+/********************************************/
 
 @media (max-width:769px) {
     .About_us_inner_left{
         width: 90%;
+    }
+
+    .responsive_hidden{
+        display: none;
     }
 }

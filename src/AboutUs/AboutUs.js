@@ -1,6 +1,7 @@
 import {React, useState} from "react";
 import {Accordion, AccordionSummary, AccordionDetails, Typography} from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import Fade from 'react-reveal/Fade';
 
 import './AboutUs.css'
 
@@ -60,12 +61,14 @@ function AboutUs() {
     }
 
     return(
-        <div className="About_us">
+        <div className="About_us ">
 
-            <p className="About_us_header">ჩვენ შესახებ</p>
+            <Fade><p className="About_us_header" >ჩვენ შესახებ</p></Fade>
 
-            <div className="About_us_inner">
+            <div className="About_us_inner responsive_hidden">
             <div className="About_us_inner_left">
+
+             <Fade left>  
             <Accordion disableGutters={true} expanded={expanded === "panel1"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')} onClick={onImg1Click}>
                 <AccordionSummary
                     id="panel1-header"
@@ -75,8 +78,9 @@ function AboutUs() {
                     <Typography className="fontfix">ჩვენ შესახებ</Typography>
                 </AccordionSummary>
                 <Typography className="textfix">lorem ipusm</Typography>
-            </Accordion>
+            </Accordion></Fade> 
 
+            <Fade left delay={110}>  
             <Accordion disableGutters={true} expanded={expanded === "panel2"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')} onClick={onImg2Click}>
                 <AccordionSummary
                     id="panel2-header"
@@ -86,9 +90,10 @@ function AboutUs() {
                     <Typography className="fontfix">ჩვენ შესახებ</Typography>
                 </AccordionSummary>
                 <Typography className="textfix">lorem ipusm</Typography>
-            </Accordion>
+            </Accordion></Fade>
 
-            <Accordion disableGutters={true} expanded={expanded === "panel3"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}>
+            <Fade left delay={120}>  
+            <Accordion disableGutters={true} expanded={expanded === "panel3"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')} onClick={onImg3Click}>
                 <AccordionSummary
                     id="panel3-header"
                     aria-controls="panel3-content"
@@ -97,9 +102,10 @@ function AboutUs() {
                     <Typography className="fontfix">ჩვენ შესახებ</Typography>
                 </AccordionSummary>
                 <Typography className="textfix">lorem ipusm</Typography>
-            </Accordion>
+            </Accordion></Fade>
 
-            <Accordion disableGutters={true} expanded={expanded === "panel4"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel4')}>
+            <Fade left delay={130}>  
+            <Accordion disableGutters={true} expanded={expanded === "panel4"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel4')} onClick={onImg4Click}>
                 <AccordionSummary
                     id="panel4-header"
                     aria-controls="panel4-content"
@@ -108,14 +114,90 @@ function AboutUs() {
                     <Typography className="fontfix">ჩვენ შესახებ</Typography>
                 </AccordionSummary>
                 <Typography className="textfix">lorem ipusm</Typography>
-            </Accordion>
+            </Accordion></Fade>
             </div>
 
-            <div className="About_us_inner_right">
+            <Fade right><div className="About_us_inner_right">
                 <img class={img2} src="https://images.ctfassets.net/0idy6cfc9e2j/4XFwUPXLN2ergs7nnB2vmY/c2cb2378177dde9ea5337e4dbf4e8c5a/DSC06832_3.jpg?w=1280&fm=webp&q=80" />
+                <img class={img3} src="https://images.ctfassets.net/0idy6cfc9e2j/y2H2wKCG9B7gvLaRzJag7/700f75a2261dbcc4c9f2550a086303c7/insite_451_0117_1.jpg?w=1280&fm=webp&q=80" />
+                <img class={img4} src="https://images.ctfassets.net/0idy6cfc9e2j/7vlNIEP6PssY5IHggLjlnY/c4329956011cc71bcf934a8389369124/DSC07479__1__1.png?w=720&fm=webp&q=90" />
                 <img class={img1} src="https://images.ctfassets.net/0idy6cfc9e2j/50HzH3Ruq1KbFKOXd6CQSM/8295242a9877dd8c17434d9f90963345/Creative_Life_Science_1.jpg?w=1280&fm=webp&q=80" />
+            </div></Fade>
             </div>
+
+
+
+
+
+            {/* ************************************************************************************** */}
+            {/* აქედან
+            იწყება 
+            რესპონსივისთვის */}
+            {/* ********************************************************************************* */}
+            
+            <div className="About_us_inner">
+            <div className="About_us_inner_left">
+
+             <Fade left>  
+            <Accordion disableGutters={true} expanded={expanded === "panel1"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')} onClick={onImg1Click}>
+                <AccordionSummary
+                    id="panel1-header"
+                    aria-controls="panel1-content"
+                    expandIcon={<ExpandMoreIcon />}
+                    >
+                    <Typography className="fontfix">ჩვენ შესახებ</Typography>
+                </AccordionSummary>
+                <Typography className="textfix">lorem ipusm</Typography>
+            </Accordion></Fade> 
+
+            <Fade right delay={110}>  
+            <Accordion disableGutters={true} expanded={expanded === "panel2"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')} onClick={onImg2Click}>
+                <AccordionSummary
+                    id="panel2-header"
+                    aria-controls="panel2-content"
+                    expandIcon={<ExpandMoreIcon />}
+                    >
+                    <Typography className="fontfix">ჩვენ შესახებ</Typography>
+                </AccordionSummary>
+                <Typography className="textfix">lorem ipusm</Typography>
+            </Accordion></Fade>
+
+            <Fade left delay={120}>  
+            <Accordion disableGutters={true} expanded={expanded === "panel3"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')} onClick={onImg3Click}>
+                <AccordionSummary
+                    id="panel3-header"
+                    aria-controls="panel3-content"
+                    expandIcon={<ExpandMoreIcon />}
+                    >
+                    <Typography className="fontfix">ჩვენ შესახებ</Typography>
+                </AccordionSummary>
+                <Typography className="textfix">lorem ipusm</Typography>
+            </Accordion></Fade>
+
+            <Fade right delay={130}>  
+            <Accordion disableGutters={true} expanded={expanded === "panel4"} onChange={(event, isExpanded) => handleChange(isExpanded, 'panel4')} onClick={onImg4Click}>
+                <AccordionSummary
+                    id="panel4-header"
+                    aria-controls="panel4-content"
+                    expandIcon={<ExpandMoreIcon />}
+                    >
+                    <Typography className="fontfix">ჩვენ შესახებ</Typography>
+                </AccordionSummary>
+                <Typography className="textfix">lorem ipusm</Typography>
+            </Accordion></Fade>
             </div>
+
+            <Fade right><div className="About_us_inner_right responsive_hidden">
+                <img class={img2} src="https://images.ctfassets.net/0idy6cfc9e2j/4XFwUPXLN2ergs7nnB2vmY/c2cb2378177dde9ea5337e4dbf4e8c5a/DSC06832_3.jpg?w=1280&fm=webp&q=80" />
+                <img class={img3} src="https://images.ctfassets.net/0idy6cfc9e2j/y2H2wKCG9B7gvLaRzJag7/700f75a2261dbcc4c9f2550a086303c7/insite_451_0117_1.jpg?w=1280&fm=webp&q=80" />
+                <img class={img4} src="https://images.ctfassets.net/0idy6cfc9e2j/7vlNIEP6PssY5IHggLjlnY/c4329956011cc71bcf934a8389369124/DSC07479__1__1.png?w=720&fm=webp&q=90" />
+                <img class={img1} src="https://images.ctfassets.net/0idy6cfc9e2j/50HzH3Ruq1KbFKOXd6CQSM/8295242a9877dd8c17434d9f90963345/Creative_Life_Science_1.jpg?w=1280&fm=webp&q=80" />
+            </div></Fade>
+            </div>
+
+
+
+               
         </div>
     )
 }
