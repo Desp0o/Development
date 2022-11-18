@@ -1,7 +1,6 @@
 .bottomSlider{
     display: flex;
     padding-top: 50px;
-    padding-bottom: 50px;
     width: 100%;
 }
 
@@ -19,8 +18,8 @@
     
 }
 
-.objfit{
-    width:1024px;
-    height:768px;
-    object-fit: scale-down;
+@media (max-width:769px) {
+    .imgclass{
+        width: 30%;
+    }
 }

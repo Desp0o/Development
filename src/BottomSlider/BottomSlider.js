@@ -13,6 +13,8 @@ import img5 from '../images/home2.jpeg'
 import img6 from '../images/home3.webp'
 import img7 from '../images/home4.jpg'
 
+
+
 function BottomSlider() {
     return(
 
