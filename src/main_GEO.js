@@ -7,6 +7,7 @@ import SellingHomes from "./SellingHomes";
 import WhyTwins from "./whyTwins/WhyTwins";
 import AboutUs from "./AboutUs/AboutUs";
 import Contact from "./Contact/Contact";
+import BottomSlider from './BottomSlider/BottomSlider.js'
 // ..
 
 
@@ -210,6 +211,9 @@ function MainGeo(){
         <AboutUs />
         
         <Contact />
+
+        <BottomSlider />
+        
         </div>
     )
 }
