@@ -1,5 +1,6 @@
 import {React, useEffect, useState,useRef} from "react";
 import Fade from 'react-reveal/Fade';
+import DragableSlider from "./DragableSlider";
 
 import './WhyTwins.css'
 
@@ -64,7 +65,8 @@ function WhyTwins() {
 
                 {/* მარჯვენა მხარე */}
                 <div className="whyTwins_inner_right responsive_hidden">
-                    <Fade right><img className="whyTwins_inner_BG" src={whyTwinBG} /></Fade>
+                    {/* <Fade right><img className="whyTwins_inner_BG" src={whyTwinBG} /></Fade> */}
+                    <Fade right><DragableSlider /></Fade>
                 </div>
 
             </div>
