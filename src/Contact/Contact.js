@@ -5,9 +5,6 @@ import Fade from 'react-reveal/Fade';
 
 import './Contact.css'
 
-import telephone from '../images/telephone.png'
-import pin from '../images/pin.png'
-import email from '../images/email.png'
 import arrow from '../images/arrow.png'
 
 
@@ -36,7 +33,7 @@ function Contact() {
             <Fade delay={200}><p className='Contact_headrer'>კონტაქტი</p></Fade>
 
             <div className='contact_inner'>
-                <div className='contact_inner_left'>
+                <div className='contact_inner_left responsive_hidden'>
                     
 
                     
@@ -50,11 +47,20 @@ function Contact() {
 
                 <div className='contact_inner_right'>
                             
-                            <form ref={form} onSubmit={sendEmail} >
+                            <form ref={form} onSubmit={sendEmail} className="responsive_hidden">
                                 <Fade right><input className="simpleInput geoStyle" type="text" name="name" placeholder="სახელი" required /></Fade>
                                 <Fade right delay={120}><input className="simpleInput geoStyle" type="text" name="number" placeholder="ნომერი" required /></Fade>
                                 <Fade right delay={160}><input className="textarea geoStyle" type="text" name="message" placeholder="თქვენი შეტყობინება"/></Fade>
                                 <Fade right delay={200}><div className="button_to_cont submit_parent">
+                                    <button className="submitBTN button_to_cont_inner geoStyle" type="submit">გაგზავნა</button>
+                                </div></Fade>
+                            </form>
+
+                            <form ref={form} onSubmit={sendEmail} className="responsive_visible">
+                                <Fade right><input className="simpleInput geoStyle" type="text" name="name" placeholder="სახელი" required /></Fade>
+                                <Fade left delay={120}><input className="simpleInput geoStyle" type="text" name="number" placeholder="ნომერი" required /></Fade>
+                                <Fade right delay={160}><input className="textarea geoStyle" type="text" name="message" placeholder="თქვენი შეტყობინება"/></Fade>
+                                <Fade left delay={200}><div className="button_to_cont submit_parent">
                                     <button className="submitBTN button_to_cont_inner geoStyle" type="submit">გაგზავნა</button>
                                 </div></Fade>
                             </form>
