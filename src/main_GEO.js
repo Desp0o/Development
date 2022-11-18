@@ -6,6 +6,7 @@ import CountNUmbers from "./CountNumbers";
 import SellingHomes from "./SellingHomes";
 import WhyTwins from "./whyTwins/WhyTwins";
 import AboutUs from "./AboutUs/AboutUs";
+import Contact from "./Contact/Contact";
 // ..
 
 
@@ -208,6 +209,7 @@ function MainGeo(){
 
         <AboutUs />
         
+        <Contact />
         </div>
     )
 }
