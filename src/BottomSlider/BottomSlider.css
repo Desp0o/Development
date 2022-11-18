@@ -1,9 +1,26 @@
 .bottomSlider{
     display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
 }
 
 .bottomSlider_inner{
     display: flex;
     width: 100%;
     height: 100px;
+}
+
+.imgclass{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+
+    
+}
+
+.objfit{
+    width:1024px;
+    height:768px;
+    object-fit: scale-down;
 }

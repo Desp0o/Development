@@ -1,25 +1,205 @@
 import React from 'react';
-import {SlideshowLightbox} from 'lightbox.js-react'
-import 'lightbox.js-react/dist/index.css'
+import Fade from 'react-reveal/Fade';
+import "photoswipe/dist/photoswipe.css";
+import { Gallery, Item } from "react-photoswipe-gallery";
+
 
 import './BottomSlider.css'
+import img1 from '../images/img1.jpg'
+import img2 from '../images/img2.jpg'
+import img3 from '../images/img3.jpg'
+import img4 from '../images/hom1.jpg'
+import img5 from '../images/home2.jpeg'
+import img6 from '../images/home3.webp'
+import img7 from '../images/home4.jpg'
 
 function BottomSlider() {
     return(
-        <div className='bottomSlider'>
-           <SlideshowLightbox className='bottomSlider_inner' theme="lightbox">
-                <img className='w-full rounded' src='https://source.unsplash.com/pAKCx4y2H6Q/1400x1200' />
-                <img className='w-full rounded' src='https://source.unsplash.com/AYS2sSAMyhc/1400x1200' />  
-                <img className='w-full rounded' src='https://source.unsplash.com/Kk8mEQAoIpI/1400x1200' />   
-                <img className='w-full rounded' src='https://images.pexels.com/photos/236588/pexels-photo-236588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' />
-                <img className='w-full rounded' src='https://images.pexels.com/photos/1051243/pexels-photo-1051243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' /> 
-                <img className='w-full rounded' src='https://images.pexels.com/photos/2693/call-box-phone-box-phones-public.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' />
-                <img className='w-full rounded' src='https://images.pexels.com/photos/163711/auto-vw-vw-bus-vehicle-163711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' />
-                <img className='w-full rounded' src='https://images.pexels.com/photos/4913514/pexels-photo-4913514.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' />
-                <img className='w-full rounded' src='https://images.pexels.com/photos/4072639/pexels-photo-4072639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' />
-                <img className='w-full rounded' src='https://images.pexels.com/photos/4558481/pexels-photo-4558481.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' />         
-            </SlideshowLightbox> 
-        </div>
+
+
+<Fade delay={200}><div className='bottomSlider'>
+    <div className='bottomSlider_inner'>
+
+        <Gallery>
+            <Item
+            original={img4}
+            thumbnail={img4}
+            width="720"
+            height="405"
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img4}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img1}
+            thumbnail={img1}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img1}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img2}
+            thumbnail={img2}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img2}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img3}
+            thumbnail={img3}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img3}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img5}
+            thumbnail={img5}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img5}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img6}
+            thumbnail={img6}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img6}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img7}
+            thumbnail={img7}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img7}
+                />
+            )}
+            </Item>
+
+            <Item
+            original={img4}
+            thumbnail={img4}
+            width="720"
+            height="405"
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img4}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img1}
+            thumbnail={img1}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img1}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img2}
+            thumbnail={img2}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img2}
+                />
+            )}
+            </Item>
+
+            <Item
+            width="720"
+            height="405"
+            original={img3}
+            thumbnail={img3}
+            >
+            {({ ref, open }) => (
+                <img
+                className='imgclass'
+                ref={ref}
+                onClick={open}
+                src={img3}
+                />
+            )}
+            </Item>
+  </Gallery>
+
+  </div>
+  </div></Fade>
     )
 }
 
