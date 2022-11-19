@@ -22,7 +22,7 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .swiper-slide img {
@@ -30,14 +30,10 @@
   width: 101%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
-
-.swiperSlider{}
 
 .swiper-slide {
   width: 70%;
-  border-radius: 10px;
 }
 
 /* .swiper-slide:nth-child(2n) {

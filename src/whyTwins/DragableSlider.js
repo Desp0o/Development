@@ -15,8 +15,8 @@ function DragableSlider() {
   return (
     <>
       <Swiper
-        slidesPerView={1.5}
-        spaceBetween={30}
+        slidesPerView={"auto"}
+        spaceBetween={20}
         loop={true}
         grabCursor={true}
         modules={[Pagination]}
