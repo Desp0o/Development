@@ -8,6 +8,14 @@ import "swiper/css/pagination";
 
 import "./styles.css";
 
+import img1 from '../images/img1.jpg'
+import img2 from '../images/img2.jpg'
+import img3 from '../images/img3.jpg'
+import img4 from '../images/hom1.jpg'
+import img5 from '../images/home2.jpeg'
+import img6 from '../images/home3.webp'
+import img7 from '../images/home4.jpg'
+
 // import required modules
 import { Pagination } from "swiper";
 
@@ -23,12 +31,11 @@ function DragableSlider() {
         watchSlidesProgress={true}
         className="mySwiper"
       >
-        <SwiperSlide><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/26/18/porto-main.jpg?quality=75&width=982&height=726&auto=webp"/></SwiperSlide>
-        <SwiperSlide><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/26/18/porto-main.jpg?quality=75&width=982&height=726&auto=webp"/></SwiperSlide>
-        <SwiperSlide><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/26/18/porto-main.jpg?quality=75&width=982&height=726&auto=webp"/></SwiperSlide>
-        <SwiperSlide><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/26/18/porto-main.jpg?quality=75&width=982&height=726&auto=webp"/></SwiperSlide>
-        <SwiperSlide><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/26/18/porto-main.jpg?quality=75&width=982&height=726&auto=webp"/></SwiperSlide>
-        <SwiperSlide><img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/26/18/porto-main.jpg?quality=75&width=982&height=726&auto=webp"/></SwiperSlide>
+        <SwiperSlide><img src={img1}/></SwiperSlide>
+        <SwiperSlide><img src={img2}/></SwiperSlide>
+        <SwiperSlide><img src={img3}/></SwiperSlide>
+        <SwiperSlide><img src={img4}/></SwiperSlide>
+        <SwiperSlide><img src={img5}/></SwiperSlide>
 
       </Swiper>
 
