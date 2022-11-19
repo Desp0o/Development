@@ -1,0 +1,50 @@
+.movingTXT{
+    min-width: fit-content;
+    box-sizing: content-box;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    
+}
+
+.movingTXT-paragraph{
+    font-size: 150px;
+    animation-name: mover;
+    animation-duration: 40s;
+    width: 110%;
+    color: transparent;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width: 0.05rem;
+
+}
+
+
+@keyframes mover {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-20%);
+    }
+}
+
+@media (max-width:1370px) {
+    .movingTXT-paragraph{
+        
+        width: 200%;
+    }
+}
+
+@media (max-width:769px) {
+    .movingTXT-paragraph{
+        font-size: 50px;
+    }
+    .movingTXT{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+}

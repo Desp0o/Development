@@ -9,6 +9,7 @@ import AboutUs from "./AboutUs/AboutUs";
 import Contact from "./Contact/Contact";
 import BottomSlider from './BottomSlider/BottomSlider.js'
 import Footer from "./footer/Footer";
+import MovingTXT from "./MovingTXT/MovingTXT";
 // ..
 
 
@@ -209,6 +210,8 @@ function MainGeo(){
 
         <WhyTwins />
 
+        <MovingTXT />
+
         <AboutUs />
         
         <Contact />
@@ -216,6 +219,7 @@ function MainGeo(){
         <BottomSlider />
 
         <Footer />
+        
         
         </div>
     )
