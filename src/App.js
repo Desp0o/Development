@@ -2,7 +2,6 @@ import React from 'react';
 import {Routes, Route} from "react-router-dom";
 import MainGeo from './main_GEO';
 
-
 import './App.css';
 
 function App() {
