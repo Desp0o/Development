@@ -10,6 +10,7 @@ import Contact from "./Contact/Contact";
 import BottomSlider from './BottomSlider/BottomSlider.js'
 import Footer from "./footer/Footer";
 import MovingTXT from "./MovingTXT/MovingTXT";
+import CountDown from "./CountDown/CountDown";
 // ..
 
 
@@ -220,6 +221,8 @@ function MainGeo(){
 
         <Footer />
         
+
+        <CountDown />
         
         </div>
     )
