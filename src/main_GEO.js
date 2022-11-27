@@ -18,6 +18,9 @@ import CountDown from "./CountDown/CountDown";
 import logo from './images/logo.png'
 import {AiOutlineMenu}  from "react-icons/ai"
 import {AiOutlineClose} from "react-icons/ai"
+import img1 from './images/img1.jpg'
+import img2 from './images/hom1.jpg'
+import img3 from './images/home2.jpeg'
 
 import Slider from './Slider'
 
@@ -55,9 +58,17 @@ function MainGeo(){
   
     
 
-    setTimeout(()=>{
-        setLoad('loading_deactivate')
-    },3000)
+    useEffect(()=>{
+      const loadScreenInterval = setTimeout(()=>{
+            setLoad('loading_deactivate')
+        },3000)
+
+        
+
+        return ()=>{
+            clearTimeout(loadScreenInterval)
+        }
+    })
     
     function burgerToggle(){
         if(!toggle){
@@ -114,7 +125,7 @@ function MainGeo(){
             -262 -268 -583 -588 l-582 -581 -583 1 -584 1 1 1090 c0 600 0 1125 1 1167 0
             76 0 77 28 80 20 2 935 1 1108 -2z"/>
             </g>
-            </motion.svg>
+                </motion.svg>
 
 
                     <div className="box">
@@ -130,8 +141,105 @@ function MainGeo(){
                         </div>
 
                     </div>
+
+
+                {/* <div className="load_txt">
+                <div className="opening_text1">T
+                    <p className="hidden letter-w" data-text="w">w</p>
+                    <p className="hidden letter-i" data-text="i">i</p>
+                    <p className="hidden letter-n" data-text="n">n</p>
+                </div>
+
+                <div className="opening_text2">D
+                    <span className="hidden letter-e1" data-text="e">e</span>
+                    <span className="hidden letter-v"  data-text="v">v</span>
+                    <span className="hidden letter-e2" data-text="e">e</span>
+                    <span className="hidden letter-l"  data-text="l">l</span>
+                    <span className="hidden letter-o"  data-text="o">o</span>
+                    <span className="hidden letter-p"  data-text="p">p</span>
+                    <span className="hidden letter-m"  data-text="m">m</span>
+                    <span className="hidden letter-e3" data-text="e">e</span>
+                    <span className="hidden letter-n2" data-text="n">n</span>
+                    <span className="hidden letter-t"  data-text="t">t</span>
+
+                </div>
+                </div>
+            
+                <div className="img-container">
+                    
+                    <div className="slider-div-1">
+                        <img className="slide-1" src={img1} />
+                    </div>
+
+                    <div className="slider-div-2">
+                        <img className="slide-2" src={img2} />
+                    </div>
+
+                    <div className="slider-div-3">
+                        <img className="slide-3" src={img3} />
+                    </div>
+
+                    <div className="slider-div-4">
+                        <img className="slide-4" src={img1} />
+                    </div>
+
+                </div> */}
+
+
+
+
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         {/* ნავიგაცია ///////////////////// */}

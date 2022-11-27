@@ -1,32 +1,37 @@
+@font-face {
+   
+  font-family: "firagoRegular" ;
+  src: url('./fonts/FiraGO-Regular.woff');
 
+}
 
 .loading{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 16;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #103D34;
-    transition: all 0.5s ease;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #103D34;
+  transition: all 0.5s ease;
 }
 
 .loading_logo{
-    width: 200px;
+  width: 200px;
 }
 
 .loading_deactivate{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #103D34;
-    margin-top: -250%;
-    transition: all 0.5s ease;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #103D34;
+  margin-top: -250%;
+  transition: all 0.5s ease;
 }
 
 
@@ -38,8 +43,9 @@
     height: 100vh;
     background: #232323;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
+    overflow: hidden;
     align-items: center;
   }
   .container .box {
@@ -235,3 +241,528 @@
       bottom: 0px;
     }
   }
+
+
+
+  /*********************************************************/
+
+  .img-container{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: makeBG 1.4s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 4.8s;
+    object-fit: unset;
+  }
+
+
+  .slider-div-1{
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    position: absolute;
+    overflow: hidden;
+    animation: sliderDiv 0.8s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: #103D34;
+  }
+
+  .slide-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0px;
+    animation:  slideAnimation 2s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+    overflow: hidden;
+    
+  }
+
+  .slider-div-2{
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    position: absolute;
+    overflow: hidden;
+    animation: sliderDiv 0.8s ease;
+    animation-iteration-count: 1;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    background-color: #103D34;
+  }
+
+  .slide-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0px;
+    animation:  slideAnimation 2s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    overflow: hidden;
+  }
+
+  .slider-div-3{
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    position: absolute;
+    overflow: hidden;
+    animation: sliderDiv 0.8s ease;
+    animation-iteration-count: 1;
+    animation-delay: 2.8s;
+    animation-fill-mode: forwards;
+    background-color: #103D34;
+  }
+
+  .slide-3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0px;
+    transform: translateY(0%);
+    animation:  slideAnimation 2s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.4s;
+    overflow: hidden;
+  }
+
+  .slider-div-4{
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    position: absolute;
+    overflow: hidden;
+    animation: sliderDiv 0.8s ease;
+    animation-iteration-count: 1;
+    animation-delay: 4.2s;
+    animation-fill-mode: forwards;
+    background-color: #103D34;
+  }
+
+  .slide-4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0px;
+    transform: translateY(0%);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3.6s;
+    overflow: hidden;
+    animation: width100 1s linear;
+  }
+
+  @keyframes sliderDiv {
+    from{
+      transform: translateY(100%);
+    }
+    to{
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slideAnimation{
+    0%{
+      object-position: 0 0px;
+    }
+    100%{
+      object-position: 0 -40px;
+    }
+  }
+
+  @keyframes makeBG {
+    0%{
+      width: 50%;
+      height: 60%;
+    object-fit: unset;
+    }
+    100%{
+      width: 100%;
+      height: 100%;
+      display: none;
+      object-fit: cover;
+    }
+  }
+
+
+
+
+  /**********************************************/
+  /* .load_txt{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 130px;
+    gap: 50px;
+  } 
+
+  .opening_text1{
+    display: flex;
+    color: #e91e63;
+    position: relative;
+    white-space: nowrap;
+    font-family: "firagoRegular" ;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #e91e63;
+    color: transparent;
+    opacity: 0;
+    transform: translateX(210px);
+    transition: all 0.8s ease;
+    animation: firstLetterIndex 0.2s linear 1.6s 1 forwards,
+               opacityText 0.4s linear 0.1s forwards,
+               textMove1 0.9s ease 4s 1 forwards,
+               textUP 0.8s ease 5s 1 forwards ;
+  }
+
+  .opening_text2{
+    display: flex;
+    color: #e91e63;
+    position: relative;
+    white-space: nowrap;
+    font-family: "firagoRegular" ;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #e91e63;
+    color: transparent;
+    transform: translateX(550px);
+    transition: all 0.8s ease;
+    animation: secondLetterIndex 0.2s linear 3s 1 forwards,
+               opacityText 0.4s linear 0.1s forwards,
+               textMove2 0.9s ease 4s 1 forwards,
+               textUP 0.8s ease 5s 1 forwards ;
+  }
+  
+  .hidden{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  .letter-w{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+    animation:fadeUp 0.8s ease 5.2s 1 forwards ;
+  }
+  .letter-w::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 5.3s 1 forwards;
+  }
+
+
+
+
+  .letter-i{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+    animation:fadeUp 0.8s ease 5.25s 1 forwards ;
+  }
+
+  .letter-i::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 5.4s 1 forwards;
+  }
+
+
+
+  .letter-n{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+    animation:fadeUp 0.8s ease 5.3s 1 forwards ;
+  }
+  .letter-n::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 5.5s 1 forwards;
+  }
+
+  .letter-e1{
+    position: relative;
+    animation:fadeUp 0.8s ease 5.35s 1 forwards ;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+  }
+  .letter-e1::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 5.7s 1 forwards;
+  }
+
+
+
+  .letter-v{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+    animation:fadeUp 0.8s ease 5.4s 1 forwards ;
+  }
+  .letter-v::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 5.8s 1 forwards;
+  }
+
+
+
+  .letter-e2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+    animation:fadeUp 0.8s ease 5.45s 1 forwards ;
+  }
+  .letter-e2::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 5.9s 1 forwards;
+  }
+
+
+  .letter-l{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+    animation:fadeUp 0.8s ease 5.5s 1 forwards ;
+  }
+  .letter-l::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 6s 1 forwards;
+  }
+
+
+
+
+  .letter-o{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+    animation:fadeUp 0.8s ease 5.55s 1 forwards ;
+  }
+  .letter-o::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 6.1s 1 forwards;
+  }
+
+
+
+  .letter-p{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 2px #e91e63;
+    animation:fadeUp 0.8s ease 5.6s 1 forwards ;
+  }
+  .letter-p::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 6.2s 1 forwards;
+  }
+
+
+
+  .letter-m{
+    position: relative;
+    animation:fadeUp 0.8s ease 5.65s 1 forwards ;
+  }
+  .letter-m::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 6.3s 1 forwards;
+  }
+
+
+  .letter-e3{
+        width: 100%;
+    animation:fadeUp 0.8s ease 5.7s 1 forwards ;
+  }
+  .letter-e3::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 6.4s 1 forwards;
+  }
+
+
+
+
+  .letter-n2{
+        height: 100%;
+    animation:fadeUp 0.8s ease 5.75s 1 forwards;
+  }
+  .letter-n2::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 6.5s 1 forwards;
+  }
+
+
+
+  .letter-t{ 
+        -webkit-text-stroke: 2px #e91e63; 
+    animation:fadeUp 0.8s ease 5.8s 1 forwards ;
+  }
+  .letter-t::before{
+    position: absolute;
+    color: transparent;
+    content: attr(data-text);
+    width:  0;
+    overflow: hidden;
+    transition: 1s;
+    animation:  textFill 0.8s ease 6.6s 1 forwards;
+  }
+
+
+  @keyframes opacityText {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes firstLetterIndex {
+    0%{
+      z-index: 0;
+    }
+    100%{
+      z-index: 1;
+    }
+  }
+
+
+  @keyframes secondLetterIndex {
+    0%{
+      z-index: 0;
+    }
+    100%{
+      z-index: 1;
+    }
+  }
+
+  @keyframes textMove1 {
+    0%{
+      transform: translateX(200px);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes textMove2 {
+    0%{
+      transform: translateX(550px);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+
+
+  @keyframes textUP {
+    0%{
+      transform: translateY(0);
+    }
+    100%{
+      transform: translateY(-100px);
+    }
+  }
+
+  @keyframes fadeUp {
+    0%{
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes textFill {
+    0%{
+      -webkit-text-stroke: 2px #e91e63;
+      width:  0;
+      color: transparent;
+    }
+    100%{
+      -webkit-text-stroke: 0px #e91e63;
+      width:  100%;
+    color: #e91e63;
+    }
+  } */
