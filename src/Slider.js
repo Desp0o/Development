@@ -35,26 +35,24 @@ function Slider() {
      const [index, setIndex] = useState(0)
      const slideLength = imgArr.length
 
-     useEffect(()=>{
-        if(index === slideLength){
-          setIndex(0)
-        }
-
-        console.log(index);
-     },[index])
+     
 
      useEffect(()=>{
+
       const sliderTimer = setInterval(()=>{
-        setIndex(index+1)
+        if(index === slideLength-1){
+          setIndex(0)
+        }else{
+          setIndex(index+1)
+        }
+        
+        console.log(index);
       },7000)
 
       return ()=>{
         clearInterval(sliderTimer)
       }
      },[index])
-
-    
-
 
   return (
    
@@ -65,7 +63,7 @@ function Slider() {
               let slideClass = 'slide'
               let txtClass = 'sliderTxt'
 
-              {index === slideIndex ? slideClass = 'slide active' : slideClass = 'slide'}
+              {index === slideIndex  ? slideClass = 'slide active' : slideClass = 'slide'}
               {index === slideIndex  ? txtClass = 'sliderTxt active' : txtClass = 'sliderTxt'}
                 
               return(
@@ -75,7 +73,7 @@ function Slider() {
                   <div className='content'>
                     <AnimatedText includeWhiteSpaces animationType="block" className='slider-txt'
                       type='words'
-                      interval={0.3}
+                      interval={0.1}
                       duration={1}
                       animation={{
                       y: '100px',

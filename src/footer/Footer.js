@@ -22,7 +22,7 @@ function Footer() {
             <div className='footer_inner_bottom'>
             <Fade delay={200}><p className='footer_header'>დაგვიკავშირდით</p></Fade>
                 <div className='footer_inner_bottom_list'>
-                <Fade bottom ><div className='logos_div'> <img src={facebook} /> </div></Fade>
+                <Fade bottom ><img src={facebook} /></Fade>
                 <Fade bottom delay={140}><img src={viber} /></Fade>
                 <Fade bottom delay={160}><img src={whatsApp} /></Fade>
                 <Fade bottom delay={180}><img src={telegram} /></Fade>
