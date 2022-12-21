@@ -18,17 +18,12 @@ import CountDown from "./CountDown/CountDown";
 import logo from './images/logo.png'
 import {AiOutlineMenu}  from "react-icons/ai"
 import {AiOutlineClose} from "react-icons/ai"
-import img1 from './images/img1.jpg'
-import img2 from './images/hom1.jpg'
-import img3 from './images/home2.jpeg'
 
 import Slider from './Slider'
 
 import './App.css'
 import './homeGeo.css'
-import './font.css'
 import './navbar.css'
-import './font.css'
 import './load.css'
 import './counting.css'
 
