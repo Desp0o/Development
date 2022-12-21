@@ -2,5 +2,5 @@
    
         font-family: "firagoRegular" ;
         src: url('./fonts/FiraGO-Regular.woff');
-    
+        font-display: swap;
 }
