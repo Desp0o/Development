@@ -59,7 +59,9 @@ function MainGeo(){
     
 
     useEffect(()=>{
+
       const loadScreenInterval = setTimeout(()=>{
+        document.body.style.overflowY = 'scroll';
             setLoad('loading_deactivate')
         },3000)
 
