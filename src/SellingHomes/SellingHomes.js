@@ -4,11 +4,11 @@ import {Link} from "react-router-dom";
 
 import './seling_homes.css'
 
-import maketi from './images/flat.png'
-import bath from './images/bathtub.png'
-import bed from './images/bed.png'
-import cube from './images/cube.png'
-import logo from './images/logo.png'
+import maketi from '../images/flat.png'
+import bath from '../images/bathtub.png'
+import bed from '../images/bed.png'
+import cube from '../images/cube.png'
+import logo from '../images/logo.png'
 
 
 function SellingHomes() {

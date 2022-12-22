@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import './CountDown.css'
 
 function CountDown() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2022-11-28T20:00:08+04:00") - +new Date();
+    const difference = +new Date("2022-12-28T20:00:08+04:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -45,7 +46,7 @@ function CountDown() {
 
 
   return (
-    <div className="">
+    <div className="countdonw">
       {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
         <p>
           <span>{timeLeft.days}</span>

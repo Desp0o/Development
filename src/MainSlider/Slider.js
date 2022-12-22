@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import AnimatedText from 'react-animated-text-content';
 
 import './slider.css'
-import './App.css'
+import '../App.css'
 
-import img1 from './images/img1.jpg'
-import img2 from './images/img2.jpg'
-import img3 from './images/img3.jpg'
+import img1 from '../images/img1.jpg'
+import img2 from '../images/img2.jpg'
+import img3 from '../images/img3.jpg'
 
 const imgArr = [
   {
@@ -46,7 +46,6 @@ function Slider() {
           setIndex(index+1)
         }
         
-        console.log(index);
       },7000)
 
       return ()=>{

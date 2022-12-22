@@ -2,6 +2,8 @@ import {React, useEffect, useState,useRef} from "react";
 import Fade from 'react-reveal/Fade';
 import CountUp, { useCountUp } from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
+import './counting.css'
+
 
 function CountNUmbers(){
 return(
