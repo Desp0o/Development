@@ -32,12 +32,12 @@ export default function App() {
         spaceBetween={20}
         centeredSlides={true}
         modules={[Navigation]}
-        className="swiper2"
+        className="swiper"
         ref={swiperRef}
         navigation={{
             
-            prevEl: navigationPrevRef.current,
-            nextEl: navigationNextRef.current
+            prevEl: '.btns',
+            nextEl: '.next'
           }}
       >
         <SwiperSlide><div className="card" >
@@ -73,7 +73,7 @@ export default function App() {
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
       <div ref={navigationPrevRef} className='btns'></div>
-      <div ref={navigationNextRef} className='btns as'></div>
+      <div ref={navigationNextRef} className='next'></div>
       <div ref={navigationPrevRef1} className='btns aa'></div>
       </div>
      
