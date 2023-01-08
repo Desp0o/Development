@@ -19,16 +19,27 @@ import img7 from '../images/home4.jpg'
 // import required modules
 import { Pagination } from "swiper";
 
+
+
 function DragableSlider() {
+
+
+  const mySwiper = new Swiper('.swiper-container', {
+    // Your Swiper options here
+  });
+  
+  const prevButton = document.querySelector('.swiper-button-prev');
+  prevButton.addEventListener('click', () => {
+    mySwiper.slideTo(mySwiper.activeIndex - 1);
+  });
   return (
     <>
       <Swiper
-        slidesPerView={"auto"}
+        slidesPerView={1}
         spaceBetween={20}
         loop={true}
         grabCursor={true}
         modules={[Pagination]}
-        watchSlidesProgress={true}
         className="mySwiper"
       >
         <SwiperSlide><img src={img1}/></SwiperSlide>
@@ -37,6 +48,9 @@ function DragableSlider() {
         <SwiperSlide><img src={img5}/></SwiperSlide>
         <SwiperSlide><img src={img2}/></SwiperSlide>
 
+        <div className="swiper-button-prev"></div>
+  
+  <div className="swiper-button-next"></div>
       </Swiper>
 
 

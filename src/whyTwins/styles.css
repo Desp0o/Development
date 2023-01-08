@@ -44,3 +44,10 @@
   width: 80%;
 } */
 
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 25px;
+}
